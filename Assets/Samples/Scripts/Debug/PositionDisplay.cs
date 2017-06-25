@@ -7,6 +7,15 @@ public class PositionDisplay : MonoBehaviour
     [SerializeField]
     Transform target;
 
+    void Start()
+    {
+        if(target == null)
+        {
+            target = Camera.main.transform;
+        }
+    }
+
+
     void OnGUI()
     {
         if (target != null)
