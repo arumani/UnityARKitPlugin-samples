@@ -1,9 +1,9 @@
 # このレポジトリについて
 
 [Unity ARKit Plugin](https://bitbucket.org/Unity-Technologies/unity-arkit-plugin)を元に、機能ごとのミニマム構成に絞ったシーンを作りました。
-Pluginのサンプルで全てカバーはされているのですが、複数機能が混じっていて若干分かり難く感じたので機能単体でそれぞれ何をしているか理解できるようにする意図で作っています。
+Pluginのサンプルで全てカバーはされているのですが、複数機能が混じっていて若干分かり難く感じたので機能単体でそれぞれ何をしているか理解できるようにする意図で作っています。
 
-- Unity ARKit Pluginに含まれていたファイルは Assets/ARKitPluginOriginal に移動しました（サンプルシーンがルートに置いてあるなど、今回作ったものと混同しそうだったため）。
+- Unity ARKit Pluginに含まれていたファイルは Assets/ARKitPluginOriginal に移動しました（サンプルシーンがルートに置いてあるなど、今回作ったものと混同しそうだったため）。
 - 元のPluginのスクリプトは以下の部分のみ手を加えました
   - サンプルシーンで利用したスクリプトのみ、日本語コメントやリファレンスへのリンクを追加
   - コンポーネントの設定をInspectorから行えるように変更
@@ -11,16 +11,16 @@ Pluginのサンプルで全てカバーはされているのですが、複数�
 # 各シーンの説明
 
 Samples/Scenes 以下に含まれる各シーンの説明です
-各シーンで特にARKitの機能を使っているクラスやオブジェクトについて、都度説明をいれています。
+各シーンで特にARKitの機能を使っているクラスやオブジェクトについて、都度説明をいれています。
 
 ## 01_PositionalTrackingVR
 
-通常の3Dゲーム（カメラ映像が無く全てCGで構成された3D空間）のMain CameraをARKitのポジショントラッキングで移動/回転できるようにするサンプルです。
+通常の3Dゲーム（カメラ映像が無く全てCGで構成された3D空間）のMain CameraをARKitのポジショントラッキングで移動/回転できるようにするサンプルです。
 
 ### UnityARCameraManager
 
 - ARKitを初期化する（初期化内容はInspectorで設定できるよう変更しました）
-- 端末カメラの3D空間上での位置と回転を取得し、Unity上のCameraに反映させる
+- 端末カメラの3D空間上での位置と回転を取得し、Unity上のCameraに反映させる
 
 ### UnityARCameraNearFar（Main Cameraに追加）
 
@@ -28,7 +28,7 @@ Samples/Scenes 以下に含まれる各シーンの説明です
 
 ## 02_PositionalTrackingAR
 
-ARの基本形として、カメラ映像の中にARで3Dオブジェクトが重なり、ジトラで移動できるだけのものです。01シーンとの違いは、Main Cameraの背景がSkybox → Depth Onlyになった点と、同オブジェクトにUnityARVideoを追加した点です。
+ARの基本形として、カメラ映像の中にARで3Dオブジェクトが重なり、ジトラで移動できるだけのものです。01シーンとの違いは、Main Cameraの背景がSkybox → Depth Onlyになった点と、同オブジェクトにUnityARVideoを追加した点です。
 
 ### UnityARVideo
 
@@ -41,12 +41,12 @@ ARの基本形として、カメラ映像の中にARで3Dオブジェクトが�
 
 ### GeneratePlanes
 
-- UnityARAnchorManagerを生成し、検出した平面を可視化するPrefabを設定する
+- UnityARAnchorManagerを生成し、検出した平面を可視化するPrefabを設定する
 
 ### UnityARAnchorManager
 
 - ARKitの平面検出/更新/削除イベントを受信する
-- 検出/更新の場合は上記で設定したPrefabを作り、削除であればそれを削除する
+- 検出/更新の場合は上記で設定したPrefabを作り、削除であればそれを削除する
 
 ## 04_PointCloud
 
@@ -60,7 +60,7 @@ ARの基本形として、カメラ映像の中にARで3Dオブジェクトが�
 
 ## 05_HitTest
 
-画面をタップすると、3D空間上のその位置にCubeを移動します。
+画面をタップすると、3D空間上のその位置にCubeを移動します。
 
 ### UnityARHitTestExample
 
