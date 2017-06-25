@@ -4,6 +4,9 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// デバッグ用にUnity上の座標を表示する
+/// </summary>
 public class PositionDisplay : MonoBehaviour
 {
     [System.Serializable]

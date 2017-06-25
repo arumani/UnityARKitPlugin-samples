@@ -18,7 +18,7 @@ public class Launcher : MonoBehaviour
     void OnGUI()
     {
         var guiStyle = GUI.skin.button;
-        guiStyle.fontSize = 22;
+        guiStyle.fontSize = 36;
 
         GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
         GUILayout.BeginHorizontal();

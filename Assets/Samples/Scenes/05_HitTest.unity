@@ -438,6 +438,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 919642543}
+  planeDetection: 0
+  alignment: 0
+  pointCloud: 1
+  lightEstimation: 0
 --- !u!4 &1862917394
 Transform:
   m_ObjectHideFlags: 0

@@ -16,7 +16,9 @@ namespace UnityEngine.XR.iOS
 
         void Start()
         {
+            // UnityARAnchorManagerが平面（正確にはARAnchor）の追加/更新/削除の都度、UnityARUtilityを呼び出す
             unityARAnchorManager = new UnityARAnchorManager();
+            // 平面の追加の際にここで設定したPrefabが作られる
             UnityARUtility.InitializePlanePrefab(planePrefab);
         }
 
@@ -25,6 +27,7 @@ namespace UnityEngine.XR.iOS
             unityARAnchorManager.Destroy();
         }
 
+        // デバッグ用
         void OnGUI()
         {
             if (displayPositions)

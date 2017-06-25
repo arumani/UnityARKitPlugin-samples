@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5587c957048494a2f96db36e0995449e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  l: {fileID: 0}
 --- !u!4 &20
 Transform:
   m_ObjectHideFlags: 0
@@ -213,6 +214,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_camera: {fileID: 1436225829}
+  planeDetection: 1
+  alignment: 0
+  pointCloud: 0
+  lightEstimation: 0
 --- !u!4 &29001987
 Transform:
   m_ObjectHideFlags: 0
