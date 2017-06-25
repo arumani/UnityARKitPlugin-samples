@@ -51,4 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a778cf2ceb9d449e9835cb7f977a7f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  targets:
+  - label: Camera
+    transform: {fileID: 0}

@@ -250,7 +250,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114693712381717292, guid: 64f268249805b4901918c801a9bcce64,
         type: 2}
-      propertyPath: target
+      propertyPath: targets.Array.data[0].transform
       value: 
       objectReference: {fileID: 919642544}
     m_RemovedComponents: []

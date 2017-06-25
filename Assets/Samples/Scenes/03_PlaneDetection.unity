@@ -194,6 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29001987}
   - component: {fileID: 29001986}
+  - component: {fileID: 29001988}
   m_Layer: 0
   m_Name: ARKitComponents
   m_TagString: Untagged
@@ -226,48 +227,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &716711896
-Prefab:
+--- !u!114 &29001988
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4824890199368820, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 9de56c4d1867d46fc8c6fc14391ab46f, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29001985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31cac8edf84834043ac167deaeba16a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planePrefab: {fileID: 1372998203143648, guid: f879aaf3eeb0c467eb22cbaf08dc97a4,
+    type: 2}
+  displayPositions: 1
 --- !u!1001 &751457954
 Prefab:
   m_ObjectHideFlags: 0
@@ -305,7 +278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4348456952922178, guid: d5fb1acaafa264240af916c5f5947e22, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114130948799342668, guid: d5fb1acaafa264240af916c5f5947e22,
         type: 2}
@@ -314,7 +287,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1963332688566512, guid: d5fb1acaafa264240af916c5f5947e22, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1963332688566512, guid: d5fb1acaafa264240af916c5f5947e22, type: 2}
       propertyPath: m_Name
@@ -360,7 +333,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4725965494444892, guid: 64f268249805b4901918c801a9bcce64, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114693712381717292, guid: 64f268249805b4901918c801a9bcce64,
         type: 2}
@@ -371,6 +344,16 @@ Prefab:
       propertyPath: m_Name
       value: Debug
       objectReference: {fileID: 0}
+    - target: {fileID: 114693712381717292, guid: 64f268249805b4901918c801a9bcce64,
+        type: 2}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693712381717292, guid: 64f268249805b4901918c801a9bcce64,
+        type: 2}
+      propertyPath: targets.Array.data[0].transform
+      value: 
+      objectReference: {fileID: 1436225835}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64f268249805b4901918c801a9bcce64, type: 2}
   m_IsPrefabParent: 0

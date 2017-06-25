@@ -1,26 +1,38 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 public class PositionDisplay : MonoBehaviour
 {
+    [System.Serializable]
+    public class Target
+    {
+        public string label;
+        public Transform transform;
+    }
+
     [SerializeField]
-    Transform target;
+    Target[] targets;
+
+    GUIStyle guiStyle;
 
     void Start()
     {
-        if(target == null)
-        {
-            target = Camera.main.transform;
-        }
+        guiStyle = new GUIStyle();
+        guiStyle.fontSize = 16;
     }
-
 
     void OnGUI()
     {
-        if (target != null)
+        if (targets != null)
         {
-            GUI.Label(new Rect(10, 10, 400, 30), "Camera position" + target.position);
+            var sb = new StringBuilder();
+            foreach(var t in targets)
+            {
+                sb.AppendFormat(t.label + " " + t.transform.position + "\n");
+            }
+            GUI.Label(new Rect(10, 10, 400, (targets.Length * 18 + 10)), sb.ToString(), guiStyle);
         }
     }
 }
