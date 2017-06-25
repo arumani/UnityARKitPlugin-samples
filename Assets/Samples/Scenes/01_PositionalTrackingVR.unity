@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 1862917394}
   - component: {fileID: 1862917393}
   m_Layer: 0
-  m_Name: ARKitComponents
+  m_Name: ARCameraManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
