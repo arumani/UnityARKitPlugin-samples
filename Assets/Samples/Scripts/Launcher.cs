@@ -17,6 +17,9 @@ public class Launcher : MonoBehaviour
 
     void OnGUI()
     {
+        var guiStyle = GUI.skin.button;
+        guiStyle.fontSize = 22;
+
         GUILayout.BeginArea(new Rect(0, 0, Screen.width, Screen.height));
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
@@ -24,7 +27,7 @@ public class Launcher : MonoBehaviour
 
         foreach (var sceneName in sceneNames)
         {
-            if (GUILayout.Button(sceneName))
+            if (GUILayout.Button(sceneName, guiStyle))
             {
                 SceneManager.LoadScene(sceneName);
             }

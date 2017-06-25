@@ -16,14 +16,6 @@ public class PositionDisplay : MonoBehaviour
     [SerializeField]
     Target[] targets;
 
-    GUIStyle guiStyle;
-
-    void OnEnable()
-    {
-        guiStyle = new GUIStyle();
-        guiStyle.fontSize = 16;
-    }
-
     IEnumerator Start()
     {
         enabled = false;
@@ -44,12 +36,16 @@ public class PositionDisplay : MonoBehaviour
             {
                 sb.AppendFormat(t.label + " " + t.transform.position + "\n");
             }
-            GUI.Label(new Rect(10, 10, 400, (targets.Length * 18 + 10)), sb.ToString(), guiStyle);
+            var labelGuiStyle = new GUIStyle();
+            labelGuiStyle.fontSize = 16;
+            GUI.Label(new Rect(10, 10, 400, (targets.Length * 18 + 10)), sb.ToString(), labelGuiStyle);
         }
 
         GUILayout.FlexibleSpace();
 
-        if (GUILayout.Button("Return to Menu"))
+        var buttonGuiStyle = GUI.skin.button;
+        buttonGuiStyle.fontSize = 22;
+        if (GUILayout.Button("Return to Menu", buttonGuiStyle))
         {
             SceneManager.LoadScene("00_Menu");
         }
