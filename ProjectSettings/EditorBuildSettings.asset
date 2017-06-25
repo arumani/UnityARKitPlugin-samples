@@ -17,3 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Samples/Scenes/03_PlaneDetection.unity
     guid: e86617e2fa22441a1bf50096fa68a006
+  - enabled: 1
+    path: Assets/Samples/Scenes/04_PointCloud.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Samples/Scenes/05_HitTest.unity
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Samples/Scenes/06_Intensity.unity
+    guid: 00000000000000000000000000000000
