@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Samples/Scenes/00_Menu.unity
+    guid: f49b8098e65e84929b6837e2668697ef
+  - enabled: 1
     path: Assets/Samples/Scenes/01_PositionalTrackingVR.unity
     guid: 1d49062bcef0441989d9b4577132ed1e
   - enabled: 1
     path: Assets/Samples/Scenes/02_PositionalTrackingAR.unity
     guid: 6be3ab962d538435b9769cc2f9f3b370
+  - enabled: 1
+    path: Assets/Samples/Scenes/03_PlaneDetection.unity
+    guid: e86617e2fa22441a1bf50096fa68a006
